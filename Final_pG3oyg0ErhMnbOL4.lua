@@ -121,6 +121,24 @@ function library:CreateWindow(name)
 
     local EpicLibrary = {}
 
+    function EpicLibrary:CreateCheat(okay)
+        local TextButton = Instance.new("TextButton")
+
+        TextButton.Parent = Frame
+        TextButton.BackgroundColor3 = Color3.fromRGB(25,22,29)
+        TextButton.BackgroundTransparency = 1.000
+        TextButton.BorderSizePixel = 0
+        TextButton.Position = UDim2.new(0.176249996, 0, 0.633333325, 0)
+        TextButton.Selectable = false
+        TextButton.Size = UDim2.new(0, 100, 0, 20)
+        TextButton.Font = Enum.Font.Cartoon
+        TextButton.TextColor3 = Color3.fromRGB(200, 200, 200)
+        TextButton.TextScaled = true
+        TextButton.TextSize = 14.000
+        TextButton.TextWrapped = true
+        TextButton.Text = okay
+    end
+
     function EpicLibrary:CreateButton(text)
         local TextButton = Instance.new("TextButton")
 
